@@ -1,6 +1,7 @@
 const form = document.querySelector(".js-form"),
     input = form.querySelector("input"),
-    greeting = document.querySelector(".js-greetings");
+    greeting = document.querySelector(".js-greetings"),
+    EL = document.querySelector("#question");
 
 const USER_LS = "currentUser",
     SHOWING_CN = "showing";
@@ -24,7 +25,7 @@ function askforName() {
 function paintGreeting(text) {
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText = `Hello ${text}`; 
+    greeting.innerText = `Welecome ${text}!`; 
 }
 
 function lodeName() {
@@ -32,7 +33,8 @@ function lodeName() {
     if(currentUser === null) {
      askforName();
     } else {
-        paintGreeting(currentUser);
+        paintGreeting(currentUser),
+        EL.style.display = "none";
     }
 }
 function init() {

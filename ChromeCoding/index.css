@@ -4,10 +4,37 @@ body {
 h1 {
     color: #FFFF;
     transition: color 0.5s ease-in-out;
+    text-align: center;
+    font-size: 60px;
+}
+
+form.js-form, form.js-toDoForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+input {
+    text-align: center;
+    font-size: 20px;
+    width: 230px;
+    height: 30px;
 }
 
 .clicked {
     color: #0000;
+}
+
+h4 {
+    text-align: center;
+    font-size: 25px;
+    background-color: #FF7878;
+}
+
+li {
+    display: inline-block; width: 100%;
+    font-size: 20px;
+    color: white;
 }
 
 .form,
@@ -21,6 +48,7 @@ h1 {
 
 .js-weather {
     color: #FFFF;
+
 }
 
 @keyframes fadeIn {
