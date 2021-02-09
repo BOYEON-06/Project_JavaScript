@@ -46,6 +46,8 @@ function handleColorclick(event){
     const color = event.target.style.backgroundColor;
     ctx.strokeStyle = color;
     ctx.fillStyle = color;
+    document.querySelector("#AppearColorName").innerHTML
+    = `Get ${color}!`
 }
 
 function handleRangeChange(event){
