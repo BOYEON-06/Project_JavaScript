@@ -5,6 +5,7 @@ const range = document.getElementById("jsRange");
 const mode = document.getElementById("jsMode");
 const saveBtn = document.getElementById("jsSave")
 const clearBtn = document.getElementById("jsClear");
+const AppearColorName = document.querySelector("#AppearColorName");
 
 const INITIAL_COLOR = "#2c2c2c"
 const CANVAS_SIZE = 700;
@@ -46,8 +47,16 @@ function handleColorclick(event){
     const color = event.target.style.backgroundColor;
     ctx.strokeStyle = color;
     ctx.fillStyle = color;
-    document.querySelector("#AppearColorName").innerHTML
-    = `Get ${color}!`
+    AppearColorName.innerHTML
+    = `Get ${color}!`;
+    AppearColorName.style.backgroundColor = color;
+    if(color === "white"){
+        AppearColorName.style.color = "black";
+    } else if(color === "yellow"){
+        AppearColorName.style.color = "black";
+    } else{
+        AppearColorName.style.color = "white";
+    }
 }
 
 function handleRangeChange(event){
