@@ -1,2 +1,2 @@
 # Project_JavaScript
-JavaScript 연습에 대한 나의 모든 프로젝트를 기록
+노마드코더의 바닐라 JS로 크롭앱 만들기 강의를 보며 공부합니다.
